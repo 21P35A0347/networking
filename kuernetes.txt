@@ -1,0 +1,62 @@
+PROMOTHEUS
+it is used for monitor highly dynamic containeres environments, it constantly  monitor all the services,alertrs when crash,identify problems before.
+
+PROMOTHES ARCHITECTURE
+main component : promothesus server(does the actual monitoring work)
+1.storage : stores metrics data(like cpu usage)
+2.Retrieval : pulls metric data from the applications,servers etc.and send the data to the database storage
+3.
+ 
+service mesh :  service mesh manage communication between the microservices
+microservices should communicate each other
+each microsservices has there own business logic 
+when the customer put some stuff in shooping cart request is recieved by web server next to 
+when we add microservice to communicate with other one end point should be configured (communication confirguration comm)
+
+challenges of a microiservice architecture
+1. business logic(Bl)
+2.communication confirguation(COMM)
+3. security logic (SEC)
+4.retrive logic(R)
+5.metrics & tracing logic(MT)
+
+security inside cluster
+__________________
+proxy is entry point to the cluster one's a request is enters into the cluster microservices get communicate each other but the data is insecure.
+
+sidecar proxy:
+handles the networking logic
+acts as a proxy
+third party application
+cluster operators can be config easily
+
+but service mesh as a control plane so it manage and control the proxy into the microservice part 
+through these proxy microservices get communicate each other
+
+Feartures of service mesh
+(traffic split configuration)  canary deployment : when we need update a service but these service has bugs  which we doen't find in testing,we can;t end up the service instead of end it 10% is utilized and the rest 90% is of older version
+
+istio architecture
+consists of control plane and data plane
+
+how to configure all the features for our services ?
+it can be configure by kubernates YAML files 
+it uses kubernetes customresourcedefinition (CRD)
+the two main crd -------> virtualservice (route the traffic to a given destination)
+                                     destinationrule (configure what happens to traffic for that destination)
+we create a CRD  1(What is CRDs   (CRDs allow users to create new types of resources without adding another API server)
+these istiod reads it and convert these high level routing  rules into envoy-specific confirgutions and send these confirguartion to all the proxy  
+
+ISTIO INGRESS GATEWAY
+-->entrypoint to your cluster it is alternative to nginx  (exess incoming traffic and load balancing)
+
+
+SERVICE MESH SETUP
+-----------------------------------
+1.Download istio from istio direct website 
+
+
+
+                              
+
+

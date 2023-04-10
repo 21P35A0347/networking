@@ -1,0 +1,18 @@
+Docker compose is used to run multiple containers as a single service.you could create a file which would start both the containers as a service without the need to start each one separately .
+YAML is the file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration. 
+Compose works in all environments: production, staging, development, testing, as well as CI workflows.
+
+Benefits of Docker compose
+• Single host deployment - This means you can run everything on a single piece of hardware
+• Quick and easy configuration - Due to YAML scripts
+• High productivity - Docker Compose reduces the time it takes to perform tasks
+• Security - All the containers are isolated from each other, reducing the threat landscape
+Basic Command of Docker Compose
+• Start all services: Docker Compose up
+• Stop all services: Docker Compose down
+• Install Docker Compose using pip: pip install -U Docker-compose
+• Check the version of Docker Compose: Docker-compose-v
+• Run Docker Compose file: Docker-compose up -d
+• List the entire process: Docker ps
+• Scale a service - Docker Compose up -d -scale
+• Use YAML files to configure application services - Docker Compose.yml

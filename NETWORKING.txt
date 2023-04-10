@@ -1,0 +1,64 @@
+NETWORKING
+when 2 or more than 2 network interface interact each other over internet
+components of networking:
+1.2 or more than 2 network interface
+2.cables or physical devices to connect
+3.Network interface cards or NIC
+4.switches: allow to connect more than network interfac.
+5.Router:allow to connect networkinterface to diferent network itself. it connect to multiple network.
+
+
+ISO international organisation of standardization
+
+OSI model :open system interconnection model
+OSI stands for Open System Interconnection is a reference model that describes how information from a software application in one computer moves through a physical medium to the software application in another computer.OSI consists of seven layers, and each layer performs a particular network function.OSI model was developed by the International Organization for Standardization (ISO) in 1984, and it is now considered as an architectural model for the inter-computer communications.OSI model divides the whole task into seven smaller and manageable tasks. Each layer is assigned a particular task.Each layer is self-contained, so that task assigned to each layer can be performed independently.
+
+The OSI model is divided into two layers: upper layers and lower layers.: 1234------>responsibility of the host
+                                                                                                                              567-------->responsibility of the network
+
+
+
+the layers are :
+
+application layer   |these three are interconnected
+presentation           |
+session                    |
+transport 
+network ------------>router
+data link
+C
+
+when one person sending data over a network data transfer from up to down------->application  to physical 
+when one person recieve data he recieve from down to upward( till network layer he will not able to understand the what data it is.) --------->Network
+
+In physical layer the data get transfer from cables in form of bits i.e 0 and 1
+In data link layer the adat get transfer through switches (Mac address)  used in corporat offices
+In Network layer router (IP DATA PACKETS) is used toiiallow u to connect through deifferent different devices
+The Data link layer is responsible for routing and forwarding the packets.A router is a networking layer system that we can use for managing and forwarding the data packets into various computer network
+
+Layer 4
+transport layer-----------------------gateway-----------------------------------------------------segments
+s. A gateway is very different. It is basically hardware or a device that acts as a gate among various available networks.
+The main responsibility of the transport layer is to transfer the data completely.It receives the data from the upper layer and converts them into smaller units known as segments
+application and presentation layer and session layer  ------------------------------------data
+
+
+
+
+DHCP  ----------------->Dynamic host confirguration protocol
+
+between the router and a network there is gateway router (the service provider allow u to connect through different networks using gateway router whether it would jio,airtel etc. )
+
+IP ADDRESS
+
+IPv4 address is a 32 bits address
+IPv6 address is a 64 bits address
+
+
+SUBNETWORK :
+                             It is division of network .
+
+
+address class system-----------------> class A class B class C
+                                                  [first octet reperesents:Network address and other three is Host address
+                             
